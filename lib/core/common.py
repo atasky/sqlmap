@@ -672,7 +672,7 @@ def paramToDict(place, parameters=None):
 
                         message = "are you really sure that you want to continue (sqlmap could have problems)? [y/N] "
 
-                        if not readInput(message, default='N', boolean=True):
+                        if not readInput(message, default='Y', boolean=True):
                             raise SqlmapSilentQuitException
                     elif not _:
                         warnMsg = "provided value for parameter '%s' is empty. " % parameter
